@@ -4,7 +4,7 @@ import { useAuth } from "../contexts/contextAuth";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, signUp } = useAuth();
+  const {  signUp } = useAuth();
   const navigate = useNavigate();
   const hundleSubmit = async (e) => {
     e.preventDefault();
